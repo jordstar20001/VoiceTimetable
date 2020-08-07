@@ -17,7 +17,8 @@ VoiceTimetable depends on a number of packages to work. Not only does it have to
 ### System packages:
 * [FFMPEG](https://ffmpeg.org/) (for audio playback)
   * Requires ffmpeg and ffprobe executeables. For some reason, ffplay is not required for pydub
-  * Can be found currently under test/ffmpeg
+  * Windows executables be found currently under test/ffmpeg
+  * For linux / macOS, install via `sudo apt install ffmpeg` ([guide](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/))
 * [PYAUDIO](https://pypi.org/project/PyAudio/) ("provides Python bindings for [PortAudio](http://www.portaudio.com/)")
   * It is recommended that you use conda to install PyAudio, as it requires certain C++ headers from portaudiolib, and this can be a hassle to install manually.
   Installation via conda is simple: `conda install pyaudio`
