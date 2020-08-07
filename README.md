@@ -14,7 +14,7 @@ VoiceTimetable depends on a number of packages to work. Not only does it have to
 * [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) - uses [Google's Speech API](https://cloud.google.com/speech-to-text/) by default.
   * Option to use offline speech recognition with [Sphinx](https://cmusphinx.github.io/) *which is included with this library, I think...* It should be noted that this will increase the speed of the program, but may be less reliable.
 * [gtts](https://pypi.org/project/gTTS/) - Google Text To Speech using Google Translate Engine. Of course, this requires an internet connection.
-* *OPTIONAL, REQUIRED FOR OFFLINE / FASTER SPEECH RECOGNITION* - [PocketSphinx](https://pypi.org/project/pocketsphinx/)
+* ~~*OPTIONAL, REQUIRED FOR OFFLINE / FASTER SPEECH RECOGNITION* [PocketSphinx](https://pypi.org/project/pocketsphinx/)~~
 ### System packages:
 * [FFMPEG](https://ffmpeg.org/) (for audio playback)
   * Requires ffmpeg and ffprobe executeables. For some reason, ffplay is not required for pydub
