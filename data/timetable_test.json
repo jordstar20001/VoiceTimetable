@@ -1,0 +1,22 @@
+{
+    "Monday": [],
+    "Tuesday": [],
+    "Wednesday": [],
+    "Thursday": [],
+    "Friday": [
+        {
+            "start_time": 990,
+            "end_time": 1020,
+            "title": "Test Class",
+            "desc": "In your house!"
+        },
+        {
+            "start_time": 1380,
+            "end_time": 1430,
+            "title": "Second Class",
+            "desc": "In your garage!"
+        }
+    ],
+    "Saturday": [],
+    "Sunday": []
+}

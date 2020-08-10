@@ -1,12 +1,5 @@
 {
-    "Monday": [
-        {
-            "start_time": 0,
-            "end_time": 120,
-            "title": "MTH1030",
-            "desc": "Mathematics for the weak"
-        }
-    ],
+    "Monday": [],
     "Tuesday": [],
     "Wednesday": [],
     "Thursday": [],
