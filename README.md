@@ -10,18 +10,15 @@ Uses Google's API for input by default, and as a non-negotiable output system.
 VoiceTimetable depends on a number of packages to work. Not only does it have to accept microphone input, but playing gTTS audio is dependent too.
 
 ### Python packages:
-* [pydub](https://github.com/jiaaro/pydub) - **REQUIRES FFMPEG to play MP3 files**, see below!
-* [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) - uses [Google's Speech API](https://cloud.google.com/speech-to-text/) by default.
-  * Option to use offline speech recognition with [Sphinx](https://cmusphinx.github.io/) *which is included with this library, I think...* It should be noted that this will increase the speed of the program, but may be less reliable.
-* [gtts](https://pypi.org/project/gTTS/) - Google Text To Speech using Google Translate Engine. Of course, this requires an internet connection.
+* [Speech recognition (Google's)](https://pypi.org/project/SpeechRecognition/) - Online TTS. To install: `pip install SpeechRecognition`
+* [pyttsx3](https://pypi.org/project/pyttsx3/) - Offline text to speech library. To install: `pip install pyttsx3`
 * ~~*OPTIONAL, REQUIRED FOR OFFLINE / FASTER SPEECH RECOGNITION* [PocketSphinx](https://pypi.org/project/pocketsphinx/)~~
-### System packages:
-* [FFMPEG](https://ffmpeg.org/) (for audio playback)
-  * Requires ffmpeg and ffprobe executeables. For some reason, ffplay is not required for pydub
-  * Windows executables be found currently under test/ffmpeg
-  * For linux / macOS, install via `sudo apt install ffmpeg` ([guide](https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/))
-* [PYAUDIO](https://pypi.org/project/PyAudio/) ("provides Python bindings for [PortAudio](http://www.portaudio.com/)")
-  * It is recommended that you use conda to install PyAudio, as it requires certain C++ headers from portaudiolib, and this can be a hassle to install manually.
-  Installation via conda is simple: `conda install pyaudio`
 
-Please note, for GIT reasons, no venv is provided, but feel free to fork and use your own venv :) 
+Feel free to fork and use your own venv :)
+Also make sure you create your own timetable.
+
+## Usage:
+* You can ask for the current time. Try asking: "What is the time?"
+* You can ask for your next class. Try asking: "When's my next class?"
+* Once you've asked fdr a class, you can then say "Open zoom link" and it will open the link specified in `timetable.json`
+* Feel free to have a look at the source and add your own commands.
