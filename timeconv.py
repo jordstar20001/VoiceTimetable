@@ -27,7 +27,7 @@ def minutes_to_human_readable(minutes: int) -> str:
             mins_text += " oh"
         mins_text += f" {num2words(mins)}"
 
-    return str.title(f"{num2words(hrs % 12)}{mins_text} ") + am_or_pm(minutes)
+    return str.title(f"{num2words(hrs % 12 if hrs != 12 else 12)}{mins_text} ") + am_or_pm(minutes)
 
 def duration_repr(t_hrs, t_mins):
     time_str = ""

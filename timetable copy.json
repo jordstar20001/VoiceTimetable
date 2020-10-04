@@ -42,7 +42,7 @@
             "start_time": 720,
             "end_time": 780,
             "title": "Mathematics Lecture",
-            "desc": "Recorded and Live Streamed",
+            "desc": "Recorded and Live Streamed on Echo",
             "zoom_link": "https://echo360.org.au/section/b3930043-bf89-4198-b591-356ad6a2ea35/home"
         },
         {
@@ -60,45 +60,9 @@
             "title": "Computer Science Laboratory",
             "desc": "3 Hours to submit Lab work, ensure you work on it prior however.",
             "zoom_link": "https://monash.zoom.us/j/94899270068?pwd=436266"
-        },
-        {
-            "start_time": 1020,
-            "end_time": 1080,
-            "title": "Statistics Lecture",
-            "desc": "Recorded and available on Moodle",
-            "zoom_link": "https://lms.monash.edu/course/view.php?id=77319"
-        },
-        {
-            "start_time": 1080,
-            "end_time": 1200,
-            "title": "Mathematics Applied Class",
-            "desc": "Covering prepared questions",
-            "zoom_link": "https://monash.zoom.us/j/91771289980?pwd=OGExb0NSSkozdGtOaDQwL0ZRMkJUdz09"
-        },
-        {
-            "start_time": 1200,
-            "end_time": 1260,
-            "title": "Mathematics Lecture",
-            "desc": "Recorded and Live Streamed on Echo",
-            "zoom_link": "https://monash.zoom.us/j/94796136759?pwd=Q3hobFNWRUJzTXBtamcwMWJCKy9HQT09"
         }
     ],
-    "Friday": [
-        {
-            "start_time": 540,
-            "end_time": 600,
-            "title": "Statistics Lecture",
-            "desc": "Live",
-            "zoom_link": "https://monash.zoom.us/j/94254805180?pwd=SnFvamxRMlQ1NDJEdVcrMlhLQzJFZz09"
-        },
-        {
-            "start_time": 1020,
-            "end_time": 1140,
-            "title": "Statistics Applied Class",
-            "desc": "Prepared questions",
-            "zoom_link": "https://monash.zoom.us/j/94254805180?pwd=SnFvamxRMlQ1NDJEdVcrMlhLQzJFZz09"
-        }
-    ],
+    "Friday": [],
     "Saturday": [],
     "Sunday": []
 }

@@ -37,13 +37,14 @@ class Timetable():
             self.days[day] = []
         self.__overwrite__()
     
-    def create_new_class(self, day: int, start_minutes_after_12am, end_minutes_after_12am, title, description):
+    def create_new_class(self, day: int, start_minutes_after_12am, end_minutes_after_12am, title, description, zoom_link):
         assert day < len(self.days), f"Can't create a class for day {day} as it doesn't exist."
         self.days[_days_of_week[day]].append({
             "start_time": start_minutes_after_12am,
             "end_time": end_minutes_after_12am,
             "title": title,
-            "desc": description
+            "desc": description,
+            "zoom_link": zoom_link
         })
         self.__overwrite__()
 
@@ -68,7 +69,15 @@ class Timetable():
         
         return None
 
+    def remove_class(self, day, index):
+        re = self.days[_days_of_week[day]].pop(index)
+        self.__overwrite__()
+        return re
+
     def __overwrite__(self):
+        # Sort by minutes
+        for day_key in self.days:
+            self.days[day_key].sort(key=lambda c: c["start_time"])
         with open(self.__data_location__, "w") as f:
             f.write(dumps(self.days, indent=4))
 
